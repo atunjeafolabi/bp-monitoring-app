@@ -38,7 +38,7 @@ class PatientComponent extends Component
 
         session()->flash('message', 'Patient successfully added.');
 
-        return redirect()->route('index');
+        return redirect()->route('home');
 
     }
 }

@@ -20,7 +20,7 @@ class BloodPressureReadingComponent extends Component
     public function mount(Request $request)
     {
         if(!$request->patient_id) {
-            return redirect()->route('index');
+            return redirect()->route('home');
         }
         $this->patient_id = $request->patient_id;
         $this->patient_full_name = $request->full_name;
@@ -40,12 +40,7 @@ class BloodPressureReadingComponent extends Component
 
         session()->flash('message', "BP reading successfully added for {$this->patient_full_name}");
 
-        return redirect()->route('index');
+        return redirect()->route('home');
 
     }
-
-//    public function previousReadings()
-//    {
-//        $this->previous_readings = BloodPressureReading::find(1);
-//    }
 }

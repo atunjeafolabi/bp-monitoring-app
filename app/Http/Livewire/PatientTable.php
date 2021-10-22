@@ -9,6 +9,10 @@ use Rappasoft\LaravelLivewireTables\Views\Column;
 
 class PatientTable extends DataTableComponent
 {
+    public function render()
+    {
+        return parent::render();
+    }
 
     public function columns(): array
     {
