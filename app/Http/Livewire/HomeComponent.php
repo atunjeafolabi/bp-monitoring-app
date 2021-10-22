@@ -17,6 +17,7 @@ class HomeComponent extends Component
 
     public function exportPatientAsCsv()
     {
+//        ini_set('memory_limit','30M');
         return Excel::download(new PatientExport(), 'patients.csv');
     }
 }

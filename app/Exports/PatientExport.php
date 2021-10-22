@@ -28,7 +28,7 @@ class PatientExport implements FromCollection, WithHeadings
      */
     public function collection()
     {
-        return Patient::query()->cursorPaginate();
-//        return Patient::all();
+        ini_set('memory_limit','300M');
+        return Patient::all();
     }
 }

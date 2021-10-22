@@ -18,8 +18,8 @@
                 Patients Records
             </a>
             <div class="mt-3">
-                <a href="{{route('home')}}" class="underline">Home</a> |
-                <a href="{{route('patients.add')}}" class="underline">Add patient</a> |
+                <a href="{{route('home')}}" class="underline">All Patients</a> |
+                <a href="{{route('patients.add')}}" class="underline">Add patient</a>
             </div>
             @if(Session::has('message'))
                 <p class="bg-green-200 p-4 mt-4">{{ Session::get('message') }}</p>
