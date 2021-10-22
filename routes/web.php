@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BloodPressureMonitorController;
+use App\Http\Livewire\PatientComponent;
+use App\Http\Livewire\PatientTable;
+use App\Http\Livewire\BloodPressureReadingComponent;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +17,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', PatientTable::class)->name('index');
+Route::get('/patients/add', PatientComponent::class)->name('patients.add');
+Route::get('/bp-readings/add', BloodPressureReadingComponent::class)->name('bp-readings.add');
