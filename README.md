@@ -20,6 +20,19 @@ This solution implements a Laravel application which is to be used by nurses to 
 ## Usage:
 Visit ``http://localhost:8000/``
 
+- To view individual Patient's record, click on the row.
+
+Screenshots
+-----------
+##### All Patients
+![All Patients](screenshots/all_patients_page.png)
+
+##### Add patient
+![Add Patient](screenshots/add_patient_page.png)
+
+##### Add Blood Pressure reading
+![Add BP Reading](screenshots/add_BP_reading_page.png)
+
 Running Tests
 -------------
 - Ensure that `database.sqlite` file is present in the database folder of the root project
